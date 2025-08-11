@@ -5,13 +5,13 @@ def sorted_squares(nums: List[int]) -> List[int]:
     right = len(nums) - 1
     answer = []
     while left <= right:
-        leftSquared = nums[left] ** 2
-        rightSquared = nums[right] ** 2
-        if leftSquared > rightSquared:
-            answer.insert(0, leftSquared)
+        left_squared = nums[left] ** 2
+        right_squared = nums[right] ** 2
+        if left_squared > right_squared:
+            answer.insert(0, left_squared)
             left += 1
         else:
-            answer.insert(0, rightSquared)
+            answer.insert(0, right_squared)
             right -= 1
     return answer
 
