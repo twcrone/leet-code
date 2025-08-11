@@ -1,23 +1,6 @@
-# This is a sample Python script.
 from typing import List
 
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-class Solution:
-    def reverseString(self, s: List[str]) -> None:
-        left = 0
-        right = len(s) - 1
-        while left < right:
-            temp = s[left]
-            s[left] = s[right]
-            s[right] = temp
-            left += 1
-            right -= 1
-
-def sortedSquares(self, nums: List[int]) -> List[int]:
+def sorted_squares(nums: List[int]) -> List[int]:
     left = 0
     right = len(nums) - 1
     answer = []
@@ -30,8 +13,17 @@ def sortedSquares(self, nums: List[int]) -> List[int]:
         else:
             answer.insert(0, rightSquared)
             right -= 1
-
     return answer
+
+def reverse_string(s: List[str]) -> None:
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        temp = s[left]
+        s[left] = s[right]
+        s[right] = temp
+        left += 1
+        right -= 1
 
 
 # Press the green button in the gutter to run the script.
